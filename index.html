@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КиноМир — Твой гид в мире кино</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Movie<span>Hub</span></div>
+        <nav class="nav">
+            <a href="#hero">Главная</a>
+            <a href="#catalog">Фильмы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+        <button id="theme-toggle" class="theme-btn">🌓</button>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Все новинки кино в одном месте</h1>
+                <p>Выбирайте, смотрите, обсуждайте.</p>
+                <a href="#catalog" class="btn-primary">Смотреть каталог</a>
+            </div>
+        </section>
+
+        <section id="catalog" class="catalog-section">
+            <h2 class="section-title">Популярные фильмы</h2>
+            <div class="movie-grid" id="movie-container">
+                <div class="movie-card">
+                    <div class="movie-img">🎬</div>
+                    <h3>Интерстеллар</h3>
+                    <p>Научная фантастика о космосе.</p>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-img">🎬</div>
+                    <h3>Начало</h3>
+                    <p>Погружение в мир осознанных сновидений.</p>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-img">🎬</div>
+                    <h3>Дюна</h3>
+                    <p>Эпическая сага о пустынной планете.</p>
+                </div>
+            </div>
+            <button id="load-more" class="btn-secondary">Показать еще</button>
+        </section>
+
+        <section id="contacts" class="form-section">
+            <h2 class="section-title">Обратная связь</h2>
+            <form id="feedback-form" class="feedback-form">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" placeholder="Ваш Email" required>
+                <textarea id="message" placeholder="Ваш отзыв о сайте" rows="5"></textarea>
+                <button type="submit" class="btn-primary">Отправить данные</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 КиноМир. Выполнено в рамках итоговой аттестации.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
